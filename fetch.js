@@ -67,7 +67,7 @@ class ScratchFetch {
     }
     
     returnLocation(position){
-        return position
+        return position.coords.latitude
     }
 }
 
