@@ -61,9 +61,13 @@ class ScratchFetch {
 
     getLocation() {
         if (window.navigator.geolocation) {
-            window.navigator.geolocation.getCurrentPosition(console.log, console.log);
+            window.navigator.geolocation.getCurrentPosition(position, console.log);
         }
         return ''
+    }
+    
+    returnLocation(position){
+        return position
     }
 }
 
